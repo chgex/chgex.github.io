@@ -92,6 +92,10 @@ toc: true
 pinned: true
 ```
 
+几点需要注意：
 
++ 属性和值之间要有空一格，如`layout: post`；
++ `title`使用英文，不能出现任何符号
++ `tags`中英文都可以；
 
 以上。
