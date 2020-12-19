@@ -18,6 +18,8 @@ toc: true
 
 ![image-20201215221136821](https://gitee.com/changyv/md-pic/raw/master/20201215221146.png)
 
+论文链接：https://arxiv.org/abs/1708.02002
+
 ## Abstract
 
 基于R-cnn推广的双阶段检测器有很高精度，其在condidate object location稀疏集合上使用了分类器。相比之下，单阶段检测器在possible object location上进行常规的密集采样，但精度比不过两阶段检测器，在论文中，作者发现：训练期间，foreground-bacground class的极度不均衡是阻碍精度的主要原因。因此，作者提出通过重构(reshape)标准交叉熵损失函数(standard cross entropy loss)，降低易分类样本（well-classified examples）的损失权重，来解决类不均衡问题。作者提出的Focal loss 专注于训练难分样本（hard-examples），并防止了大量的易分样本压倒（overwhelming）检测器。为了评估focal loss的有效性，设计并训练了一个简单密集检测器RetinaNet。使用focal loss训练的RetinaNet达到了先前单阶段检测器的速度，并在精度上超过了目前所有的双阶段检测器（该论文发表于2018年）。
