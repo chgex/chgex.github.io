@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2020-12-13 typora+picgo编辑文本
+title: typora+picgo编辑文本
 date: 2020-12-13
 Author: JIUGE 
 tags: [document]
