@@ -5,7 +5,7 @@ date: 2020-12-16
 Author: JIUGE 
 tags: [论文阅读]
 comments: true
-toc: true
+toc: false
 ---
 
 本文介绍一种新的损失函数：focal loss，通过重构标准交叉熵损失函数和降低易分类样本的损失权重，解决单阶段检测器类不均衡问题。
@@ -150,3 +150,5 @@ RetinaNet骨干网使用了特征金字塔(FPN)，FPN使用一个自顶向下的
 本文证明了类不均衡问题是提升单精度检测精度的最大障碍，针对该问题，提出了focal loss，在交叉熵损失上引入调制因子，使专注于难分样本。设计了一个全卷积单阶段检测器，通过实验分析，表明该网络拥有目前最优的精度和速度。
 
 源码：https://github.com/facebookresearch/Detectron
+
+以上。
