@@ -3,7 +3,7 @@ layout: post
 title: hello-world
 date: 2020-12-10
 Author: JIUGE 
-tags: [other, markdown]
+tags: [other]
 comments: true
 toc: false
 ---

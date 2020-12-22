@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Focal Loss for Dense Object Detection
+title: Focal Loss
 date: 2020-12-16
 Author: JIUGE 
 tags: [论文阅读]
