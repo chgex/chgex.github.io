@@ -147,13 +147,9 @@ anchor采样：来自同一图像的mini-batch包含多个正负anchor，为避�
 
 faster rcnn在当时，在多个数据集上取得了SOTA的mAP。
 
+## Reference
 
-
-
-
-
-
-
+[blog]	https://blog.csdn.net/happyday_d/article/details/85870358
 
 
 
