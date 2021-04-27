@@ -149,11 +149,11 @@ faster rcnn在当时，在多个数据集上取得了SOTA的mAP。
 
 ## Reference
 
-[blog]	https://blog.csdn.net/happyday_d/article/details/85870358
+[1]	https://blog.csdn.net/happyday_d/article/details/85870358
 
+[2]	code https://github.com/chenyuntc/simple-faster-rcnn-pytorch
 
-
-
+[3]	code https://www.cnblogs.com/kerwins-AC/p/9752679.html
 
 
 
