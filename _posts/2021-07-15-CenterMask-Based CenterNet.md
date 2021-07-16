@@ -8,11 +8,12 @@ centerMask,基于CenterNet.
 
 <!-- more -->
 
-#       
+# 
 
 ## CenterMask: single shot instance segmentation with point representation
 
 paper is available at: https://arxiv.org/abs/2004.04446
+
 code: not publish
 
 论文信息：
@@ -22,6 +23,8 @@ code: not publish
 <center><B>Meituan Dianping Group</center></B>
 
 <center>{wangyuqing06, xuzhaoliang,shenhao04, chengbaoshan02, yanglirong}@meituan.com </center>
+
+
 
 
 ### Abstract
