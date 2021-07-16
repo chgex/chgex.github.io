@@ -45,7 +45,7 @@ code: not publish
 
 图1：CenterMask说明图
 
-![image-20210716131659611](__md__/image-20210716131659611.png)
+![image-20210716131659611](https://github.com/chgex/chgex.github.io/raw/master/__md__/image-20210716131659611.png)
 
 **Inference**: 输入一张图片，预测出目标中心点位置，然后提取中心点的特征表示（用于区分实例），形成该目标的局部形状表示（即目标的粗糙形状），局部形状表示可以区分相邻目标（或重叠目标）。与此同时，全卷积骨干网产生整张图片的全局显著性图（用于区分前景和背景，是像素级的区分）。最后，将粗糙但感知实例（coarse but instance-aware）的局部形状和精确但不感知实例（precise but instance-unaware）的全局显著性图组合起来（ennn，就是对应位置元素相乘，具体见下一节），就形成了最终的实例掩码（instance masks）。
 
@@ -67,7 +67,7 @@ CenterMask是一个单阶段实例分割方法，单阶段意味着不需要预�
 
 size和shape分支结构，如下图所示：
 
-![image-20210716150508787](__md__/image-20210716150508787.png)
+![image-20210716150508787](https://github.com/chgex/chgex.github.io/raw/master/__md__/image-20210716150508787.png)
 
 其中，$P$ 是特征图（由骨干网提取得到），Local shape head 输出 $F_{shape} \in R^{H×W×S^2}$ ，size head 输出 $F_{szie} \in R^{H×W×2}$ （H和W为特征图的高和宽，$S^2$ 为特征图的channel数）。
 
@@ -87,7 +87,7 @@ Global Saliency Map 可以是类无关的（class-agnostic）：整张图的像�
 
 图3是一个Global Saliency Map的示例：
 
-![image-20210716161421302](__md__/image-20210716161421302.png)
+![image-20210716161421302](https://github.com/chgex/chgex.github.io/raw/master/__md__/image-20210716161421302.png)
 
 > An example of Global Saliency Map is shown in the top of Figure 3, using the class-agnostic setting for visualization convenience. As can be seen in the figure, the map highlights the pixels that have saliency, and achieves pixel wise alignment with the input image.
 
