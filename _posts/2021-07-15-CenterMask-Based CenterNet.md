@@ -21,8 +21,7 @@ code: not publish
 
 <center><B>Meituan Dianping Group</center></B>
 
-<center>{wangyuqing06, xuzhaoliang,shenhao04, chengbaoshan02, yanglirong}@meituan.com
-</center>
+<center>{wangyuqing06, xuzhaoliang,shenhao04, chengbaoshan02, yanglirong}@meituan.com </center>
 
 
 ### Abstract
