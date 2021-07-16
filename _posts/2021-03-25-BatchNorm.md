@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Batch Normalization: Accelerating Deep Network Training by Reducing
-Internal Covariate Shift
+title: Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
 date: 2021-03-25
 Author: JIUGE 
 tags: [论文阅读]
