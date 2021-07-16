@@ -29,6 +29,7 @@ code: not publish
 
 ### Abstract
 
+
 单阶段实例分割主要面临2个挑战：区分目标实例（object instances differentiation）和像素级特征对齐（pixel-wise feature alignment）。
 
 作者提出一种single-shot的实例分割模型，将实例分割问题分解为2个并行子任务：局部形状预测（Local shape prediction）和全局显著图生成（ Global Saliency generation），前者用于区分重叠对象，后者对图像做像素级的分割。结合两分支的输出，就可以得到最终的实例掩码（instance mask）。
@@ -37,7 +38,10 @@ code: not publish
 
 在COCO数据集上实现了34.5的mask AP，在一阶段目标检测器FCOS上加入该分支做实例分割，也有不错的表现。
 
+
 ### 1 Introduction
+
+
 
 实例分割是对图像中的每个实例进行定位、分类和分割，所以它具有目标检测和语义分割的特征。
 
@@ -71,11 +75,15 @@ code: not publish
 + The Local Shape representation of object masks.
 + The Global Saliency Map is proposed to realize pixel-wise feature alignment naturally.
 
+
 ### 3 CenterMask
+
 
 CenterMask是一个单阶段实例分割方法，单阶段意味着不需要预生成RoIs，CenterMask将实例分割分解为2个分支，第一个分支从中心点表示中，预测目标的粗糙的local shape，local shape用于限制目标区域并区分不同的实例。第二个分支预测整张图的 saliency map，实现精确前景背景分割。最后，将两个分支的输出相集合，就得到了每个实例的分割结果。
 
+
 #### 3.1 Local Shape Prediction
+
 
 为了区分实例，作者基于目标中心点，建模目标mask（中心点定义为目标边界框的中心）。由于固定大小的特征，不够表示不同大小的mask，因此作者将目标mask分解为两个部分：mask size和mask shape（size为目标的高和宽，shape为2维二值数组，修正之后的大小和size宽高相同）。
 
